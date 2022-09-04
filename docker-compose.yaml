@@ -1,0 +1,10 @@
+services:
+  wp-category-injector:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: morhpt.sv:32000/wp-category-injector
+    container_name: wp-category-injector
+    command: ['run', '--wp-url', 'wp.morhpt.sv', '-u', 'admin', '-p', 'admin', '-d', '/data.txt']
+    volumes:
+      - ./data.txt:/data.txt
