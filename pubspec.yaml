@@ -11,6 +11,8 @@ dependencies:
   dio:
   recase:
   args:
+  tuple:
+  collection:
 
 dev_dependencies:
   lints: ^2.0.0
